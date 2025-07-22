@@ -12,7 +12,6 @@ const useDetailView = () => {
       if (!response) {
         throw new Error(`Pokemon with name ${name} not found`)
       }
-      console.log('Fetched Pokemon Detail:', response)
       setPokemonDetail(getShapedPokemonDetail(response))
     },
     [setPokemonDetail]

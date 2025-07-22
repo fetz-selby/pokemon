@@ -1,19 +1,18 @@
 import { PokemonDetail } from '@/types'
 import { Box, Card, Chip, Typography } from '@mui/material'
 import Stack from '@mui/material/Stack'
-import DetailRow from '../DetailRow/DetailRow'
+import DetailRow from '@/components/DetailRow/DetailRow'
 
 type DetailViewProps = {
   pokemonDetail: PokemonDetail | null
 }
 
 const DetailView = ({ pokemonDetail }: DetailViewProps) => {
-  console.log('Rendering DetailView with pokemonDetail:', pokemonDetail)
   return (
     <>
       {pokemonDetail ? (
-        <Card sx={{ padding: 2, marginTop: 2 }}>
-          <Stack spacing={2} sx={{ width: 300 }}>
+        <Card sx={{ padding: 2, marginTop: 2, width: '100%' }}>
+          <Stack spacing={2}>
             <Typography variant="h3" gutterBottom>
               {pokemonDetail?.name || 'Pokemon Detail'}
             </Typography>

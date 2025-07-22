@@ -86,9 +86,21 @@ const getShapedPokemonDetail = (
   }
 }
 
+const getParamValue = (
+  urlString: string | null,
+  param: string
+): number | null => {
+  if (!urlString) return null
+  const fullUrl = new URL(urlString)
+  const urlParams = new URLSearchParams(fullUrl.search)
+  const value = urlParams.get(param)
+  return value ? Number(value) : null
+}
+
 export {
   getAllPokemonResults,
   getPokemonNames,
   searchPokemonByName,
   getShapedPokemonDetail,
+  getParamValue,
 }

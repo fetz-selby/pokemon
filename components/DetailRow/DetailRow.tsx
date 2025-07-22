@@ -27,7 +27,6 @@ const DetailRow = ({ label, value, valueComponent }: DetailRowProps) => {
             gap: 1,
             border: '1px solid #f8f8f8',
             borderRadius: '4px',
-            maxWidth: '600px',
             maxHeight: '120px',
             overflowY: 'auto',
           }}

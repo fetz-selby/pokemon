@@ -3,7 +3,6 @@
 import React from 'react'
 import { Pokemon, PokemonResponse } from '@/types'
 import useVirtualizeList from './useVirtualizeList'
-import useDetailView from '../DetailView/useDetailView'
 import Box from '@mui/material/Box'
 
 type VirtualizedPaginatedListProps = {
@@ -67,7 +66,7 @@ const VirtualizedPaginatedList = ({
               >
                 {isLoaderRow ? (
                   <div style={{ textAlign: 'center', padding: '20px' }}>
-                    {hasMore ? 'Loading more...' : 'No more posts'}
+                    {hasMore ? 'Loading more...' : 'No more Pokemon to load'}
                   </div>
                 ) : (
                   <Box

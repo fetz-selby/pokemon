@@ -1,17 +1,10 @@
 import { Pokemon, PokemonResponse } from '@/types'
 import { getPokemonResponse } from '@/utils/api'
+import { getParamValue } from '@/utils/helpers'
 import { useVirtualizer } from '@tanstack/react-virtual'
 import { useCallback, useRef, useState, useEffect } from 'react'
 
 const PAGE_SIZE = 20
-
-const getNextOffset = (nextUrl: string | null): number => {
-  if (!nextUrl) return 0
-  const fullUrl = new URL(nextUrl)
-  const urlParams = new URLSearchParams(fullUrl.search)
-  const offset = urlParams.get('offset')
-  return offset ? Number(offset) : 0
-}
 
 const useVirtualizeList = (
   pokemonResponse: PokemonResponse,
@@ -20,7 +13,7 @@ const useVirtualizeList = (
 ) => {
   const [items, setItems] = useState<Pokemon[]>(pokemonResponse.results || [])
   const [offset, setOffset] = useState(() =>
-    getNextOffset(pokemonResponse.next)
+    getParamValue(pokemonResponse.next, 'offset')
   )
   const [hasMore, setHasMore] = useState(true)
   const [loading, setLoading] = useState(false)
@@ -51,9 +44,9 @@ const useVirtualizeList = (
     setLoading(true)
     const pokemonResponse: PokemonResponse = await getPokemonResponse(
       PAGE_SIZE,
-      offset
+      Number(offset)
     )
-    setOffset(getNextOffset(pokemonResponse.next))
+    setOffset(getParamValue(pokemonResponse.next, 'offset'))
     setItems((prev) => [...prev, ...pokemonResponse.results])
     if (pokemonResponse.results.length < PAGE_SIZE) setHasMore(false)
     setLoading(false)
