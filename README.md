@@ -44,11 +44,18 @@ This is a Next.js app that showcases a virtualized list of Pokémon. It uses the
 #### Table view
 <img width="821" height="657" alt="Screenshot 2025-07-23 at 10 13 31" src="https://github.com/user-attachments/assets/1ed0aa33-a9b7-4e57-a273-6f3d59fee1d0" />
 
+#### Table view offline notification
+<img width="807" height="682" alt="Screenshot 2025-07-23 at 10 48 06" src="https://github.com/user-attachments/assets/13b78299-db43-4659-968c-44cd270c7e87" />
+
 #### Detail view of a Pokemon
 <img width="1634" height="809" alt="Screenshot 2025-07-23 at 10 14 50" src="https://github.com/user-attachments/assets/16b06cf4-d312-4a1e-b846-4cfeec7f01b1" />
 
 #### Virtualize view
 <img width="1606" height="796" alt="Screenshot 2025-07-23 at 10 14 06" src="https://github.com/user-attachments/assets/94aba4b2-04d9-477d-bace-d06b28ea6d78" />
+
+#### Virtualize view offline notification
+<img width="1135" height="808" alt="Screenshot 2025-07-23 at 10 49 58" src="https://github.com/user-attachments/assets/3114d2f2-f30e-4e68-bb17-5d608366036a" />
+
 
 
 
