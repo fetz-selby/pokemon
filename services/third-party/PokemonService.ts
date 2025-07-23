@@ -20,7 +20,6 @@ class PokemonService {
     const cachedData =
       PokemonService.PokemonCacheWithOffsetAndLimit.get(cacheKey)
     if (cachedData) {
-      console.log('Returning cached data for:', cacheKey)
       return JSON.parse(
         typeof cachedData === 'string' ? cachedData : JSON.stringify(cachedData)
       )
@@ -48,7 +47,6 @@ class PokemonService {
     const cacheKey = `pokemon_name:${name}`
     const cachedData = PokemonService.PokemonCacheWithName.get(cacheKey)
     if (cachedData) {
-      console.log('Returning cached data for:', cacheKey)
       return JSON.parse(
         typeof cachedData === 'string' ? cachedData : JSON.stringify(cachedData)
       )
