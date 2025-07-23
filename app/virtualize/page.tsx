@@ -1,8 +1,8 @@
 import PageWithVirtualizer from '@/components/PageWithVirtualizer/PageWithVirtualizer'
 import { getPokemonResponse } from '@/utils/api'
 
-const HomePage = async () => {
-  const initialData = await getPokemonResponse(20, 20)
+const VirtualizationPage = async () => {
+  const initialData = await getPokemonResponse(20, 0)
 
   return (
     <div style={{ padding: '2rem', fontFamily: 'Arial, sans-serif' }}>
@@ -11,4 +11,4 @@ const HomePage = async () => {
   )
 }
 
-export default HomePage
+export default VirtualizationPage
