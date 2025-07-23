@@ -16,23 +16,40 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## App Description
 
 This is a Next.js app that showcases a virtualized list of Pokémon. It uses the PokeAPI to fetch Pokémon data and displays it in a table format with pagination. The app is designed to handle large datasets efficiently by only rendering the visible items in the list.
 
+
 ## Features
 
 - Fetches Pokémon data from the PokeAPI if not already cached.
 - Displays Pokémon in a virtualized list for performance (Option 1).
-- Implements table with pagination to navigate through the Pokémon data (Option 2).
+- Implements a table with pagination to navigate through the Pokémon data (Option 2).
 - Offline notification and support for previously fetched Pokémon data.
+  
 
-## Deploy on Vercel
+## TODO
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+-  More tests (unit, integration)
+-  Implement a caching strategy 
+-  Implement better styling
+-  Offline friendly
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Snapshots of the App
+#### Home screen
+<img width="1158" height="888" alt="Screenshot 2025-07-23 at 10 13 08" src="https://github.com/user-attachments/assets/38824f21-f288-4017-9217-61753d05d683" />
+
+#### Table view
+<img width="821" height="657" alt="Screenshot 2025-07-23 at 10 13 31" src="https://github.com/user-attachments/assets/1ed0aa33-a9b7-4e57-a273-6f3d59fee1d0" />
+
+#### Detail view of a Pokemon
+<img width="1634" height="809" alt="Screenshot 2025-07-23 at 10 14 50" src="https://github.com/user-attachments/assets/16b06cf4-d312-4a1e-b846-4cfeec7f01b1" />
+
+#### Virtualize view
+<img width="1606" height="796" alt="Screenshot 2025-07-23 at 10 14 06" src="https://github.com/user-attachments/assets/94aba4b2-04d9-477d-bace-d06b28ea6d78" />
+
+
+
+
