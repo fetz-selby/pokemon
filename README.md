@@ -53,6 +53,10 @@ This is a Next.js app that showcases a virtualized list of Pokémon. It uses the
 #### Virtualize view
 <img width="1606" height="796" alt="Screenshot 2025-07-23 at 10 14 06" src="https://github.com/user-attachments/assets/94aba4b2-04d9-477d-bace-d06b28ea6d78" />
 
+#### Virtualize view search
+<img width="1679" height="784" alt="Screenshot 2025-07-23 at 11 02 08" src="https://github.com/user-attachments/assets/72ec5fd9-af18-495c-8a47-69de2ea37034" />
+
+
 #### Virtualize view offline notification
 <img width="1135" height="808" alt="Screenshot 2025-07-23 at 10 49 58" src="https://github.com/user-attachments/assets/3114d2f2-f30e-4e68-bb17-5d608366036a" />
 
